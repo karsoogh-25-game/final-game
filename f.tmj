@@ -1157,7 +1157,7 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":144.774806856591,
+                 "height":146.108140189924,
                  "id":198,
                  "name":"jitsiMeetingRoom",
                  "properties":[
@@ -1189,12 +1189,12 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":312.808,
-                 "x":-0.901344278126999,
-                 "y":249.74441694833
+                 "width":192.808,
+                 "x":0.431989055206344,
+                 "y":205.74441694833
                 }, 
                 {
-                 "height":140.146125060357,
+                 "height":132.146125060357,
                  "id":199,
                  "name":"jitsiMeetingRoom",
                  "properties":[
@@ -1226,9 +1226,9 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":318.808,
-                 "x":643.09962143892,
-                 "y":251.54451352004
+                 "width":202.808,
+                 "x":759.09962143892,
+                 "y":216.877846853373
                 }],
          "opacity":1,
          "properties":[
@@ -1258,7 +1258,7 @@
                  "value":true
                 }],
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -1275,7 +1275,7 @@
                  "value":"admin"
                 }],
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         },
