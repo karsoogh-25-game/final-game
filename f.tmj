@@ -962,6 +962,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"MeetingRoom"
@@ -997,6 +1002,11 @@
                          "name":"focusable",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -1036,6 +1046,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"MeetingRoom"
@@ -1071,6 +1086,11 @@
                          "name":"focusable",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -1110,6 +1130,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"MeetingRoom"
@@ -1145,6 +1170,11 @@
                          "name":"focusable",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
                         }, 
                         {
                          "name":"jitsiRoom",
@@ -1184,6 +1214,11 @@
                          "value":true
                         }, 
                         {
+                         "name":"jitsiConfig ",
+                         "type":"string",
+                         "value":"{ \"deeplinking\": { \"disabled\": true} }"
+                        }, 
+                        {
                          "name":"jitsiRoom",
                          "type":"string",
                          "value":"MeetingRoom"
@@ -1211,32 +1246,6 @@
                  "y":479.211180186707
                 }],
          "opacity":1,
-         "properties":[
-                {
-                 "name":"closeLayer",
-                 "type":"string",
-                 "value":"closeddoor-0"
-                }, 
-                {
-                 "name":"default",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
-                 "name":"door",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
-                 "name":"openLayer",
-                 "type":"string",
-                 "value":"openeddoor-0"
-                }, 
-                {
-                 "name":"persist",
-                 "type":"bool",
-                 "value":true
-                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
