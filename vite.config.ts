@@ -24,7 +24,6 @@ if (process.env.TILESET_OPTIMIZATION && process.env.TILESET_OPTIMIZATION === "tr
 export default defineConfig({
     base: "./",
     build: {
-        sourcemap: true,
         rollupOptions: {
             input: {
                 index: "./index.html",
