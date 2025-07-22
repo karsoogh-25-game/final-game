@@ -13687,21 +13687,8 @@
          "tilewidth":32
         }, 
         {
-         "columns":16,
-         "firstgid":24066,
-         "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/LimeZu_Interiors_Visibile_Upstairs_System.png",
-         "imageheight":864,
-         "imagewidth":512,
-         "margin":0,
-         "name":"LimeZu_Interiors_Visibile_Upstairs_System",
-         "spacing":0,
-         "tilecount":432,
-         "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
          "columns":18,
-         "firstgid":24498,
+         "firstgid":24066,
          "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/animated_escalator_down_32x32.png",
          "imageheight":160,
          "imagewidth":576,
@@ -13827,7 +13814,7 @@
         }, 
         {
          "columns":9,
-         "firstgid":24588,
+         "firstgid":24156,
          "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/Wordings.png",
          "imageheight":416,
          "imagewidth":288,
@@ -13840,7 +13827,7 @@
         }, 
         {
          "columns":36,
-         "firstgid":24705,
+         "firstgid":24273,
          "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/animated_cat_32x32.png",
          "imageheight":32,
          "imagewidth":1152,
@@ -13958,7 +13945,7 @@
         }, 
         {
          "columns":76,
-         "firstgid":24741,
+         "firstgid":24309,
          "image":"src\/assets\/LimeZu_Interiors_Room_Builder.png",
          "imageheight":3488,
          "imagewidth":2432,
@@ -13967,29 +13954,6 @@
          "spacing":0,
          "tilecount":8284,
          "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
-         "columns":6,
-         "firstgid":33025,
-         "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/WA_Special_Zones.png",
-         "imageheight":64,
-         "imagewidth":192,
-         "margin":0,
-         "name":"WA_Special_Zones",
-         "spacing":0,
-         "tilecount":12,
-         "tileheight":32,
-         "tiles":[
-                {
-                 "id":2,
-                 "properties":[
-                        {
-                         "name":"collides",
-                         "type":"bool",
-                         "value":true
-                        }]
-                }],
          "tilewidth":32
         }],
  "tilewidth":32,
