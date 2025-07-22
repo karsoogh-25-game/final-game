@@ -13687,147 +13687,8 @@
          "tilewidth":32
         }, 
         {
-         "columns":18,
-         "firstgid":24066,
-         "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/animated_escalator_down_32x32.png",
-         "imageheight":160,
-         "imagewidth":576,
-         "margin":0,
-         "name":"animated_escalator_down_32x32",
-         "spacing":0,
-         "tilecount":90,
-         "tileheight":32,
-         "tiles":[
-                {
-                 "animation":[
-                        {
-                         "duration":150,
-                         "tileid":19
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":22
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":25
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":28
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":31
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":34
-                        }],
-                 "id":19
-                }, 
-                {
-                 "animation":[
-                        {
-                         "duration":150,
-                         "tileid":37
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":40
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":43
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":46
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":49
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":52
-                        }],
-                 "id":37
-                }, 
-                {
-                 "animation":[
-                        {
-                         "duration":150,
-                         "tileid":55
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":58
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":61
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":64
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":67
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":70
-                        }],
-                 "id":55
-                }, 
-                {
-                 "animation":[
-                        {
-                         "duration":150,
-                         "tileid":73
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":76
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":79
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":82
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":85
-                        }, 
-                        {
-                         "duration":150,
-                         "tileid":88
-                        }],
-                 "id":73
-                }],
-         "tilewidth":32
-        }, 
-        {
-         "columns":9,
-         "firstgid":24156,
-         "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/Wordings.png",
-         "imageheight":416,
-         "imagewidth":288,
-         "margin":0,
-         "name":"Wordings",
-         "spacing":0,
-         "tilecount":117,
-         "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
          "columns":36,
-         "firstgid":24273,
+         "firstgid":24066,
          "image":"D:\/GitHub\/sogeti-green-x-game\/src\/assets\/animated_cat_32x32.png",
          "imageheight":32,
          "imagewidth":1152,
@@ -13945,7 +13806,7 @@
         }, 
         {
          "columns":76,
-         "firstgid":24309,
+         "firstgid":24102,
          "image":"src\/assets\/LimeZu_Interiors_Room_Builder.png",
          "imageheight":3488,
          "imagewidth":2432,
