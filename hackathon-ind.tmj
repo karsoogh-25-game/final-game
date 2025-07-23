@@ -6532,7 +6532,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -6630,7 +6630,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -6728,7 +6728,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -6826,7 +6826,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -6924,7 +6924,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7022,7 +7022,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7120,7 +7120,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7218,7 +7218,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7316,7 +7316,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7414,7 +7414,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7512,7 +7512,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7610,7 +7610,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7708,7 +7708,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7806,7 +7806,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -7904,7 +7904,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -8002,7 +8002,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -8100,7 +8100,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -8198,7 +8198,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -8296,7 +8296,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -8394,7 +8394,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":true
+                 "value":false
                 }, 
                 {
                  "name":"doorVariable",
@@ -11858,7 +11858,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
