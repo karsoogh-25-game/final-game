@@ -753,7 +753,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"\/@\/bma\/sogeti-green-x-game-jam\/hackathon-ind-floor-1#from-floor0"
+                         "value":"quiz1#from-floor0"
                         }],
                  "type":"tilelayer",
                  "visible":true,
