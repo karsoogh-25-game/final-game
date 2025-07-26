@@ -27,7 +27,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: "./index.html",
-                numberField: "./auth/numberfield.html",
+                numberField: "./src/auth/numberfield.html",
                 ...getMapsScripts(maps),
             },
         },
