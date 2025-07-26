@@ -10,6 +10,7 @@
     "prod": "vite preview"
   },
   "devDependencies": {
+    "@types/csv-parse": "^1.2.5",
     "@types/node": "^18.15.11",
     "@workadventure/iframe-api-typings": "^1.17.1",
     "dotenv": "^16.3.1",
@@ -18,6 +19,7 @@
     "wa-map-optimizer-vite": "^1.1.26"
   },
   "dependencies": {
-    "@workadventure/scripting-api-extra": "^1.9.1"
+    "@workadventure/scripting-api-extra": "^1.9.1",
+    "csv-parse": "^6.1.0"
   }
 }

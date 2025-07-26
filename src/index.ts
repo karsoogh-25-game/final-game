@@ -9,19 +9,38 @@ let playerCanGoUpstairs: boolean = true;
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
-    
-    WA.room.onEnterLayer('intelVideo').subscribe(() => {
-        currentPopup = WA.ui.openPopup(
-            "intelVideoPopup",
-            "Is your dev toolbox ready for the Game Jam? Watch this video from Intel to see how to optimize your code.",
-            [
-                {label: 'Intel software', className: 'primary', callback: () => WA.nav.openTab("https://software.intel.com/")},
-                {label: 'Watch video', className: 'error', callback: () => WA.nav.openCoWebSite("https://www.youtube.com/embed/FyrWs6bZDXw")}
-            ]
-        )
-    })
-    WA.room.onLeaveLayer('intelVideo').subscribe(closePopUp)
+    // console.log('Player tags: ',WA.player.tags)
+
+
+    // user auth
+    let numberWebsite: any;
+
+    WA.room.onEnterLayer("visibleNumberField").subscribe(async () => {
+        console.log(" ************************* Entering visibleNote layer");
+
+        numberWebsite = await WA.ui.website.open({
+            url: "./auth/numberfield.html",
+            position: {
+                vertical: "top",
+                horizontal: "middle",
+            },
+            size: {
+                height: "30vh",
+                width: "50vw",
+            },
+            margin: {
+                top: "10vh",
+            },
+            allowApi: true,
+        });
+
+    });
+
+    WA.room.onLeaveLayer("visibleNumberField").subscribe(() => {
+        numberWebsite.close();
+    });
+
+
 
     // Hackathon Left stairs
     WA.room.onEnterLayer('leftUpstairsZone').subscribe(() => {
@@ -38,16 +57,16 @@ WA.onInit().then(() => {
         if (playerCanGoUpstairs) {
             WA.controls.disablePlayerControls()
             WA.room.showLayer("leftUpstairsAnim")
-            WA.player.moveTo(1230,256)
+            WA.player.moveTo(1230, 256)
         } else {
             WA.controls.disablePlayerControls()
             WA.room.showLayer("leftDownstairsAnim")
-            WA.player.moveTo(1230,448)
+            WA.player.moveTo(1230, 448)
         }
     })
 
-      // Hackathon Right stairs
-      WA.room.onEnterLayer('rightUpstairsZone').subscribe(() => {
+    // Hackathon Right stairs
+    WA.room.onEnterLayer('rightUpstairsZone').subscribe(() => {
         playerCanGoUpstairs = false
         WA.room.hideLayer("rightUpstairsAnim")
         WA.controls.restorePlayerControls()
@@ -61,11 +80,11 @@ WA.onInit().then(() => {
         if (playerCanGoUpstairs) {
             WA.controls.disablePlayerControls()
             WA.room.showLayer("rightUpstairsAnim")
-            WA.player.moveTo(1648,256)
+            WA.player.moveTo(1648, 256)
         } else {
             WA.controls.disablePlayerControls()
             WA.room.showLayer("rightDownstairsAnim")
-            WA.player.moveTo(1648,448)
+            WA.player.moveTo(1648, 448)
         }
     })
 
@@ -73,10 +92,10 @@ WA.onInit().then(() => {
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
     }).catch(e => console.error(e));
-    
+
 }).catch(e => console.error(e));
 
-function closePopUp(){
+function closePopUp() {
     if (currentPopup !== undefined) {
         currentPopup.close();
         currentPopup = undefined;
