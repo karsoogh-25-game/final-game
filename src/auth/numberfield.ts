@@ -1,6 +1,5 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 import * as fs from 'fs';
 import { parse } from 'csv-parse';
 

@@ -3,7 +3,6 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
 let playerCanGoUpstairs: boolean = true;
 
 // Waiting for the API to be ready
@@ -95,9 +94,3 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function closePopUp() {
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
