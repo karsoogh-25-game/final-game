@@ -15,34 +15,6 @@ WA.onInit().then(() => {
 
 
 
-
-
-
-
-
-    let coWebsite: CoWebsite
-    WA.room.onEnterLayer("website").subscribe(async () => {
-        // console.log("1723612783127312371283  ", WA.player.state.hasVariable("auth"));
-        // console.log("askjdhaskjdhasjkdkjhasjkda          ", WA.player.state.auth, typeof (WA.player.state.auth))
-        if (WA.player.state.auth && WA.player.state.auth !== "-1") {
-            // console.log("            aiosdhasdjasdoasod")
-            let x: string = 'http://karsooghmehregan.ir/?username='
-            const s = WA.player.state.loadVariable("auth") as string
-            x = x.concat(s);
-            // console.log(x);
-            coWebsite = await WA.nav.openCoWebSite("http://karsooghmehregan.ir/");
-
-
-        } else {
-            // console.log("121212121 12ui12h1u2hu")
-        }
-    })
-
-    WA.room.onLeaveLayer("website").subscribe(() => {
-        if (coWebsite)
-            coWebsite.close();
-    })
-
     // Hackathon Left stairs
     WA.room.onEnterLayer('leftUpstairsZone').subscribe(() => {
         playerCanGoUpstairs = false
