@@ -1,6 +1,5 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 // import { UIWebsite } from "@workadventure/iframe-api-typings";
-import { CoWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -11,8 +10,6 @@ let playerCanGoUpstairs: boolean = true;
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     // console.log(' ............ Player tags: ', WA.player.tags);
-
-
 
 
     // Hackathon Left stairs
