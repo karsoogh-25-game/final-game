@@ -25,10 +25,15 @@ WA.onInit().then(() => {
             //         flatStrings.push(...row); // ترکیب تمام رشته‌ها در یک آرایه
             //     })
             //     .on('end', () => {
-            console.log('All strings:', flatStrings);
-            if (flatStrings.includes(noteTextArea.value)) {
+
+            // console.log('All strings:', flatStrings);
+            // console.log("          ", noteTextArea.value);
+
+            if (flatStrings.includes(noteTextArea.value.toString())) {
+
                 WA.player.tags.push("auth");
                 WA.player.tags.push(noteTextArea.value);
+                console.log(' .-------. Player tags: ', WA.player.tags);
             }
             // })
             // .on('error', (err: Error) => {

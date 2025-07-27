@@ -1,4 +1,5 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
+import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -7,36 +8,68 @@ let playerCanGoUpstairs: boolean = true;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
+    let numberWebsite: UIWebsite;
     console.log('Scripting API ready');
-    // console.log('Player tags: ',WA.player.tags)
+    // console.log(' ............ Player tags: ', WA.player.tags);
 
 
     // user auth
-    let numberWebsite: any;
+    // let numberWebsite: UIWebsite | undefined;
+
+
 
     WA.room.onEnterLayer("visibleNumberField").subscribe(async () => {
-        console.log(" ************************* Entering visibleNote layer");
+        console.log(' .---...---. Player tags: ', WA.player.tags);
 
-        numberWebsite = await WA.ui.website.open({
-            url: "./auth/numberfield.html",
-            position: {
-                vertical: "top",
-                horizontal: "middle",
-            },
-            size: {
-                height: "30vh",
-                width: "50vw",
-            },
-            margin: {
-                top: "10vh",
-            },
-            allowApi: true,
-        });
+        if (!WA.player.tags.includes("auth")) {
+            // console.log(" ************************* Entering visibleNote layer");
+            // console.log(numberWebsite);
+            numberWebsite = await WA.ui.website.open({
+                url: "./src/auth/numberfield.html",
+                position: {
+                    vertical: "top",
+                    horizontal: "middle",
+                },
+                size: {
+                    height: "18vh",
+                    // height: "13vh",
+                    width: "14vw",
+                },
+                margin: {
+                    top: "20vh",
+                },
+                allowApi: true,
+            });
+        }
 
     });
 
     WA.room.onLeaveLayer("visibleNumberField").subscribe(() => {
-        numberWebsite.close();
+        // console.log(WA.ui.website.getAll())
+        // console.log(" 790e48590e4580             get out ");
+        // console.log(numberWebsite.position.horizontal);
+        // if (numberWebsite) {
+        // numberWebsite.close().then(() => {
+        // numberWebsite = null;
+        // console.log("satisfide")
+        // }).catch(e => console.log(e));
+        // }
+
+        // numberWebsite.close();
+
+
+        WA.ui.website.getAll().then((websites) => {
+            console.log("alll the tags", WA.player.tags);
+            // console.log("تمام پنجره‌های باز:", websites);
+            websites.forEach(site => {
+                // console.log("URL:", site.url);
+                // console.log("Visible:", site.visible);
+                if (site.url == "./src/auth/numberfield.html")
+                    site.close();
+            });
+        });
+
+
     });
 
 
@@ -94,3 +127,4 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
+export { };
