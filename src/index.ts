@@ -1,5 +1,5 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
-import { UIWebsite } from "@workadventure/iframe-api-typings";
+// import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -8,7 +8,7 @@ let playerCanGoUpstairs: boolean = true;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    let numberWebsite: UIWebsite;
+    // let numberWebsite: UIWebsite;
     console.log('Scripting API ready');
     // console.log(' ............ Player tags: ', WA.player.tags);
 
@@ -24,7 +24,7 @@ WA.onInit().then(() => {
         if (!WA.player.tags.includes("auth")) {
             // console.log(" ************************* Entering visibleNote layer");
             // console.log(numberWebsite);
-            numberWebsite = await WA.ui.website.open({
+            await WA.ui.website.open({
                 url: "./src/auth/numberfield.html",
                 position: {
                     vertical: "top",
