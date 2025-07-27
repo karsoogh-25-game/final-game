@@ -1,5 +1,6 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 // import { UIWebsite } from "@workadventure/iframe-api-typings";
+import { CoWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -19,28 +20,28 @@ WA.onInit().then(() => {
 
 
     WA.room.onEnterLayer("visibleNumberField").subscribe(async () => {
-        console.log(' .---...---. Player tags: ', WA.player.tags);
+        // console.log(' .---...---. Player tags: ', WA.player.tags);
 
-        if (!WA.player.tags.includes("auth")) {
-            // console.log(" ************************* Entering visibleNote layer");
-            // console.log(numberWebsite);
-            await WA.ui.website.open({
-                url: "./src/auth/numberfield.html",
-                position: {
-                    vertical: "top",
-                    horizontal: "middle",
-                },
-                size: {
-                    height: "18vh",
-                    // height: "13vh",
-                    width: "14vw",
-                },
-                margin: {
-                    top: "20vh",
-                },
-                allowApi: true,
-            });
-        }
+        // if (!WA.player.state.auth) {
+        // console.log(" ************************* Entering visibleNote layer");
+        // console.log(numberWebsite);
+        await WA.ui.website.open({
+            url: "./src/auth/numberfield.html",
+            position: {
+                vertical: "top",
+                horizontal: "middle",
+            },
+            size: {
+                height: "18vh",
+                // height: "13vh",
+                width: "14vw",
+            },
+            margin: {
+                top: "20vh",
+            },
+            allowApi: true,
+        });
+        // }
 
     });
 
@@ -59,7 +60,7 @@ WA.onInit().then(() => {
 
 
         WA.ui.website.getAll().then((websites) => {
-            console.log("alll the tags", WA.player.tags);
+            // console.log("alll the tags", WA.player.tags);
             // console.log("تمام پنجره‌های باز:", websites);
             websites.forEach(site => {
                 // console.log("URL:", site.url);
@@ -72,7 +73,28 @@ WA.onInit().then(() => {
 
     });
 
+    let coWebsite: CoWebsite
+    WA.room.onEnterLayer("website").subscribe(async () => {
+        // console.log("1723612783127312371283  ", WA.player.state.hasVariable("auth"));
+        // console.log("askjdhaskjdhasjkdkjhasjkda          ", WA.player.state.auth, typeof (WA.player.state.auth))
+        if (WA.player.state.auth && WA.player.state.auth !== "-1") {
+            // console.log("            aiosdhasdjasdoasod")
+            let x: string = 'http://karsooghmehregan.ir/?username='
+            const s = WA.player.state.loadVariable("auth") as string
+            x = x.concat(s);
+            // console.log(x);
+            coWebsite = await WA.nav.openCoWebSite("http://karsooghmehregan.ir/");
 
+
+        } else {
+            // console.log("121212121 12ui12h1u2hu")
+        }
+    })
+
+    WA.room.onLeaveLayer("website").subscribe(() => {
+        if (coWebsite)
+            coWebsite.close();
+    })
 
     // Hackathon Left stairs
     WA.room.onEnterLayer('leftUpstairsZone').subscribe(() => {
