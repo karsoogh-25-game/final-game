@@ -12151,13 +12151,13 @@
                  "text":
                     {
                      "fontfamily":"IRNazanin",
-                     "pixelsize":37,
+                     "pixelsize":35,
                      "text":"\u0646\u0642\u0637\u0647 \u0634\u0631\u0648\u0639 2"
                     },
                  "type":"",
                  "visible":true,
                  "width":309.666666666667,
-                 "x":1152,
+                 "x":1157,
                  "y":768
                 }, 
                 {
@@ -12168,13 +12168,13 @@
                  "text":
                     {
                      "fontfamily":"IRNazanin",
-                     "pixelsize":37,
+                     "pixelsize":35,
                      "text":"\u0646\u0642\u0637\u0647 \u0634\u0631\u0648\u0639 1"
                     },
                  "type":"",
                  "visible":true,
                  "width":309.666666666667,
-                 "x":1600,
+                 "x":1573,
                  "y":768
                 }, 
                 {
@@ -12185,13 +12185,13 @@
                  "text":
                     {
                      "fontfamily":"IRNazanin",
-                     "pixelsize":37,
+                     "pixelsize":35,
                      "text":"\u0646\u0642\u0637\u0647 \u0634\u0631\u0648\u0639 3"
                     },
                  "type":"",
                  "visible":true,
                  "width":309.666666666667,
-                 "x":1600,
+                 "x":1573,
                  "y":1408
                 }, 
                 {
@@ -12202,7 +12202,7 @@
                  "text":
                     {
                      "fontfamily":"IRNazanin",
-                     "pixelsize":37,
+                     "pixelsize":35,
                      "text":"\u0646\u0642\u0637\u0647 \u0634\u0631\u0648\u0639 4"
                     },
                  "type":"",
