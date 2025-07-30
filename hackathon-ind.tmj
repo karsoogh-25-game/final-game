@@ -12928,11 +12928,6 @@
          "value":"Credits: Valdo Romao https:\/\/www.linkedin.com\/in\/valdo-romao\/ \nLicense: CC-BY-SA 3.0 (http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/)"
         }, 
         {
-         "name":"mapDescription",
-         "type":"string",
-         "value":"Sogeti Green X Game: Hackathon IND map"
-        }, 
-        {
          "name":"mapImage",
          "type":"string",
          "value":"hackathon-ind.png"
@@ -12941,11 +12936,6 @@
          "name":"mapLink",
          "type":"string",
          "value":"https:\/\/valdotr.github.io\/sogeti-green-x-game\/hackathon-ind.json"
-        }, 
-        {
-         "name":"mapName",
-         "type":"string",
-         "value":"Hackathon IND"
         }, 
         {
          "name":"script",
