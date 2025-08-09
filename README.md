@@ -53,3 +53,9 @@ This project contains multiple licenses as follows:
 If you add third party assets in your map, do not forget to:
 1. Credit the author and license with the "tilesetCopyright" property present in the properties of each tilesets in the `map.tmj` file
 2. Add the license text in LICENSE.assets
+
+## map names:
+
+- hackathon-ind.json
+- hackathon-ind-floor-1.json
+- hackathon-ind-floor-2.json
